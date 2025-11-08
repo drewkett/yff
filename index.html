@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Fantasy Football Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Yahoo Fantasy Football</h1>
+            <div id="user-info"></div>
+        </header>
+
+        <main>
+            <!-- Login view -->
+            <div id="login-view" class="view">
+                <div class="card">
+                    <h2>Welcome to Yahoo Fantasy Football Interface</h2>
+                    <p>Connect your Yahoo account to view your fantasy football leagues and teams.</p>
+                    <button id="login-btn" class="btn btn-primary">Connect to Yahoo</button>
+                    <div class="info-box">
+                        <h3>What you'll need:</h3>
+                        <ul>
+                            <li>A Yahoo account with Fantasy Football leagues</li>
+                            <li>Permission to access your fantasy data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading view -->
+            <div id="loading-view" class="view hidden">
+                <div class="spinner"></div>
+                <p>Loading your fantasy data...</p>
+            </div>
+
+            <!-- Leagues view -->
+            <div id="leagues-view" class="view hidden">
+                <div class="toolbar">
+                    <button id="refresh-btn" class="btn">Refresh</button>
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+                <div id="leagues-container"></div>
+            </div>
+
+            <!-- League details view -->
+            <div id="league-details-view" class="view hidden">
+                <button id="back-btn" class="btn">← Back to Leagues</button>
+                <div id="league-details-container"></div>
+            </div>
+
+            <!-- Error view -->
+            <div id="error-view" class="view hidden">
+                <div class="card error">
+                    <h2>Oops! Something went wrong</h2>
+                    <p id="error-message"></p>
+                    <button id="retry-btn" class="btn btn-primary">Try Again</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Alternative interface for Yahoo Fantasy Football |
+                <a href="https://github.com/drewkett/yff" target="_blank">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

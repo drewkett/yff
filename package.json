@@ -1,0 +1,20 @@
+{
+  "name": "yahoo-fantasy-interface",
+  "version": "0.1.0",
+  "description": "Alternative web interface for Yahoo Fantasy Football",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "yahoo",
+    "fantasy",
+    "football"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
