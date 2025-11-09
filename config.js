@@ -2,7 +2,7 @@
 const config = {
   // Replace with your Yahoo App Client ID
   // Get one at: https://developer.yahoo.com/apps/
-  clientId: 'dj0yJmk9T1BsS3g2RXdHdHBvJmQ9WVdrOVZXNXBlVUZXVUZBbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTQ0',
+  clientId: 'dj0yJmk9SmV4VlNQRUdtVDZVJmQ9WVdrOWVUZHhOV0pVU2pBbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTll',
 
   // OAuth endpoints
   authEndpoint: 'https://api.login.yahoo.com/oauth2/request_auth',
